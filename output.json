@@ -1,0 +1,53 @@
+[
+  {
+    "output": "```json\n[\n  \"Phenomenological approach\",\n  \"Intersubjectivity\",\n  \"Cartesian tradition\",\n  \"Consciousness\",\n  \"Merleau-Ponty\",\n  \"Body-subject\",\n  \"Mind-body dualism\",\n  \"Embodied perception\",\n  \"Alterity\",\n  \"Postcolonial theory\",\n  \"Epistemic violence\",\n  \"Marginalized subject\",\n  \"Lived experience\",\n  \"Hegemonic knowledge production\",\n  \"Hermeneutic circle\",\n  \"Interpretation\",\n  \"Politics of representation\",\n  \"Western metaphysics\",\n  \"Ontologies\",\n  \"Relationality\",\n  \"Difference\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The phenomenological approach to understanding intersubjectivity challenges the Cartesian tradition by positing that consciousness is fundamentally relational rather than solipsistic. Merleau-Ponty's concept of the 'body-subject' dissolves the mind-body dualism, suggesting that embodied perception mediates our encounter with alterity. This framework intersects with postcolonial theory's critique of epistemic violence, wherein the marginalized subject's lived experience resists hegemonic knowledge production. Furthermore, the hermeneutic circle\u2014the interpretive process wherein understanding emerges through the dialogue between part and whole\u2014becomes central to how we theorize the politics of representation in contemporary discourse. These philosophical currents collectively interrogate the foundations of Western metaphysics and propose alternative ontologies grounded in relationality and difference."
+      },
+      "solution_criteria": [
+        "Extracts abstract philosophical and theoretical concepts (e.g., phenomenology, intersubjectivity, hermeneutics) as distinct topics",
+        "Captures nuanced frameworks and theorists referenced (e.g., Merleau-Ponty, body-subject, postcolonial theory)",
+        "Returns output as a valid JSON array of strings with no additional formatting or explanation"
+      ],
+      "task_description": "extract topics out of the passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a humanities passage containing abstract concepts and theoretical frameworks to verify extraction of nuanced, non-technical topics"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no commentary, and the response contains only the JSON array. It successfully captures the abstract philosophical and theoretical concepts central to the text (phenomenology, intersubjectivity, hermeneutics, postcolonial theory, ontology, relationality) and includes key theorists and frameworks (Merleau-Ponty, body-subject, epistemic violence, marginalized subject). The extraction is thorough and demonstrates strong understanding of the source material. While there are minor issues with granularity and some slight redundancy, these do not violate mandatory requirements and represent only minor deviations from optimal topic extraction practice."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"Autophagy pathways\",\n  \"Hypoxic stress\",\n  \"Human cardiomyocytes\",\n  \"ATG7 gene knockout\",\n  \"BECN1 gene knockout\",\n  \"Autophagy-related proteins\",\n  \"Confocal microscopy\",\n  \"Western blot analysis\",\n  \"LC3-II/LC3-I ratios\",\n  \"Mitochondrial membrane potential\",\n  \"JC-1 fluorescence assays\",\n  \"Autophagic flux\",\n  \"Reactive oxygen species\",\n  \"Apoptotic signaling\",\n  \"p53-BAX pathway\",\n  \"Hypoxia-inducible factor 1-alpha\",\n  \"ULK1 complex\",\n  \"Selective autophagy\",\n  \"Damaged organelles\",\n  \"Ischemic heart disease\",\n  \"Gene therapy\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study investigates the role of CRISPR-Cas9 gene editing in modulating autophagy pathways during hypoxic stress in human cardiomyocytes. We employed clustered regularly interspaced short palindromic repeats technology to selectively knockout ATG7 and BECN1 genes, which encode key autophagy-related proteins. Using high-resolution confocal microscopy and Western blot analysis, we quantified LC3-II/LC3-I ratios and monitored mitochondrial membrane potential via JC-1 fluorescence assays. Our results demonstrate that CRISPR-mediated ATG7 disruption significantly impairs autophagic flux under hypoxic conditions, leading to increased reactive oxygen species accumulation and enhanced apoptotic signaling through the p53-BAX pathway. Additionally, we identified a novel regulatory interaction between hypoxia-inducible factor 1-alpha and the ULK1 complex that modulates selective autophagy of damaged organelles. These findings suggest therapeutic potential for targeting autophagy-related genes in ischemic heart disease treatment protocols."
+      },
+      "solution_criteria": [
+        "Extracts all major research topics and techniques mentioned (e.g., CRISPR-Cas9, autophagy, gene editing, cardiomyocytes, specific genes and proteins)",
+        "Identifies distinct conceptual areas (methodology, biological pathways, disease application)",
+        "Returns output as a JSON array of strings with no duplicates"
+      ],
+      "task_description": "extract topics out of the passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a dense scientific abstract from biology or chemistry containing domain-specific jargon and nested concepts to ensure proper identification of main research topics"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no duplicates and no commentary. It successfully extracts most major research topics across methodology, biological pathways, and disease applications. However, it includes one topic ('Gene therapy') that is not explicitly mentioned in the passage, which represents an addition beyond extraction. The solution captures approximately 95% of the explicitly stated topics but adds an inferred element that violates the strict extraction requirement. This is a minor but notable deficiency in adhering to the extraction-only mandate."
+  },
+  {
+    "output": "```json\n[\n  \"carbon pricing mechanisms\",\n  \"ecosystem service valuation\",\n  \"environmental economics\",\n  \"biodiversity loss\",\n  \"carbon offset calculations\",\n  \"tropical forest conservation\",\n  \"market-based economic frameworks\",\n  \"ecological thresholds\",\n  \"tipping points\",\n  \"nature-based solutions\",\n  \"climate mitigation\",\n  \"wetland restoration\",\n  \"mangrove reforestation\",\n  \"interdisciplinary collaboration\",\n  \"environmental scientists\",\n  \"economists\",\n  \"policy makers\",\n  \"carbon sequestration rates\",\n  \"habitat recovery metrics\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The integration of carbon pricing mechanisms with ecosystem service valuation represents a critical frontier in environmental economics. Recent studies demonstrate that incorporating biodiversity loss into carbon offset calculations can increase project valuations by 40-60%, particularly in tropical forest conservation initiatives. However, this approach requires reconciling market-based economic frameworks with ecological thresholds and tipping points. Furthermore, the emergence of nature-based solutions for climate mitigation\u2014such as wetland restoration and mangrove reforestation\u2014necessitates interdisciplinary collaboration between environmental scientists, economists, and policy makers to establish standardized methodologies for measuring both carbon sequestration rates and habitat recovery metrics."
+      },
+      "solution_criteria": [
+        "Extracts all distinct topics spanning economics, environmental science, and policy domains",
+        "Captures hybrid/overlapping subjects (e.g., carbon pricing, ecosystem services, nature-based solutions) as separate topics",
+        "Returns output as a JSON array of strings with no extraneous fields or formatting"
+      ],
+      "task_description": "extract topics out of the passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with an interdisciplinary passage mixing multiple fields (e.g., economics + environmental science) to verify correct extraction of topics when overlapping or hybrid subjects are present"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it contains a valid JSON array of strings with topics only (no commentary), and the response contains only the JSON array. It meets the secondary criteria by extracting distinct topics across multiple domains and capturing hybrid subjects. The inclusion of professional roles (scientists, economists, policy makers) as topics is debatable since they function as actors rather than substantive topics, but the task asks to extract 'topics mentioned in the article' without explicitly excluding actor categories. This is a minor interpretive issue rather than a clear violation. Overall, the solution demonstrates strong comprehension of the passage and delivers exactly what was requested."
+  }
+]
